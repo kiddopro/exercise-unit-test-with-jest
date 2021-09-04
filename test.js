@@ -24,3 +24,7 @@ test('One dollar should be 109.694134 yen', () => {
 test('One yen should be 0.006576 british punds', () => {
     expect(fromYenToPound(1)).toBe(0.006576);
 });
+
+test('Hallo should be NaN dollar', () => {
+    expect(fromDollarToYen('Hallo')).toBe(NaN);
+});

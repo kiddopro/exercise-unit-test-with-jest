@@ -21,17 +21,17 @@ let oneYenIs = {
 }
 
 function fromEuroToDollar(euro){
-    return euro * oneEuroIs.USD;
+    return Number(euro) * oneEuroIs.USD;
 }
 
 
 function fromDollarToYen(dolar){
-    return dolar * oneDollarIs.JPY;
+    return Number(dolar) * oneDollarIs.JPY;
 }
 
 
 function fromYenToPound(yen){
-    return yen * oneYenIs.GBP;
+    return Number(yen) * oneYenIs.GBP;
 }
 
 module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound }
