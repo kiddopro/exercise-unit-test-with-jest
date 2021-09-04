@@ -16,3 +16,11 @@ test('One euro should be 1.2 dollars', function(){
     //hacemos la comparacion en el mismo expect
     expect(fromEuroToDollar(3.5)).toBe(4.2);
 })
+
+test('One dollar should be 109.694134 yen', () => {
+    expect(fromDollarToYen(1)).toBe(109.694134);
+});
+
+test('One yen should be 0.006576 british punds', () => {
+    expect(fromYenToPound(1)).toBe(0.006576);
+});
