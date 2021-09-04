@@ -1,5 +1,5 @@
 // importamos la function sum del archivo app.js
-const { sum } = require('./app.js');
+const { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound } = require('./app.js');
 
 //primera prueba
 test('adds 14 + 9 to equal 23', () => {
@@ -9,3 +9,10 @@ test('adds 14 + 9 to equal 23', () => {
     //esperamos que la sumade los 2 numeros sea 23
     expect(total).toBe(23);
 });
+
+
+//testeamos lo otro
+test('One euro should be 1.2 dollars', function(){
+    //hacemos la comparacion en el mismo expect
+    expect(fromEuroToDollar(3.5)).toBe(4.2);
+})
